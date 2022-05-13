@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 10% auto;
+    grid-template-areas: "header header" "sidebar main";
+}
+
+.grid-side-navigation {
+    grid-area: sidebar;
+    background: rgb(197, 242, 93);
+}
+
+.grid-header {
+    grid-area: header;
+    background: rgb(221, 251, 101);
+}
+
+.grid-main {
+    grid-area: main;
+    background: white;
+}
+
+.gamename {
+    font-size: 2.5rem;
+    font-family: "Bungee Outline", cursive;
+    letter-spacing: 0.15em;
+    color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: inline-flex;
+}
+
+.gamebox {
+    font-size: 2.5rem;
+    font-family: "Bungee Outline", cursive;
+    letter-spacing: 0.5em;
+    color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.keyboard {
+    font-size: 7rem;
+}
+
+.AnswerBox {
+    display: block;
+    padding: 50rem;
+}
+
+.QuestionBox {
+    display: block;
+}
+
+.keys {
+    margin: 1rem;
+    border-radius: 1px;
+    display: block;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.resetbtn {
+    margin: 1rem;
+    border-radius: 1px;
+    display: block;
+    align-items: center;
+    padding: 0.5rem;
+}
